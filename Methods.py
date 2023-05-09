@@ -2,7 +2,6 @@ def returnUnique(listOfLists, index):
     resultSet = set()
     for observationList in listOfLists:
         resultSet.add(observationList[index])
-
     return resultSet
 
 
@@ -23,7 +22,7 @@ def getDictOfAtrributes(listofLists):
     dictOfAttributes = {}
 
     for attribute in returnUnique(listofLists, len(listofLists[0]) - 1):
-        dictOfAttributes[attribute] = {"occurences": 0, "likelihood": 0}
+        dictOfAttributes[attribute] = {"occurences": 0, "likelihood": 1}
 
         for attributeList in listofLists:
             if attributeList[len(attributeList) - 1] == attribute:
