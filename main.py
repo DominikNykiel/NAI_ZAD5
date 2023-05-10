@@ -1,7 +1,7 @@
 import Methods
 
 # Czytamy zbiór z pliku
-testList = Methods.readFromFile("C:/Users/Dominik/testList.txt")
+testList = Methods.readFromFile("testList.txt")
 
 # Bierzemy słownik, który ma w sobie atrybuty decyzyjne i ich liczności, a także wartości prawdopodobieństw ustawione
 # na 1
